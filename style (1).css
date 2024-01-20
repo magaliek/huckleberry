@@ -1,7 +1,7 @@
 * {
   box-sizing: border-box;
   font-family: "Lato", sans-serif;
-  line-height: 1.7;
+  line-height: 1.5;
 }
 
 html,
@@ -12,86 +12,47 @@ body {
 
 /* Add styles here! */
 .max-width-wrapper {
-  .intro-chunk {
-    background-color: white;
-    padding-inline: 1em;
-    width: 22em;
-    margin-inline-start: 10em;
-    margin-block-start: 4em;
-  }
-
-  @media (max-width: 48rem) {
-    .intro-chunk {
-      margin-inline-start: 1.2em;
-    }
-  }
-
-  @media (max-width: 24.375rem) {
-    .intro-chunk {
-      width: 17em;
-      margin-inline-start: 1em;
-    }
-  }
+  max-width: 615px;
+  margin: 64px auto;
 }
+
+.intro-chunk {
+  max-width: 375px;
+  padding-inline: 10px;
+}
+
 header {
-  padding-bottom: 2em;
-  border-bottom: solid 8px hsla(0, 0%, 60%, 1);
+  border-bottom: solid 6px hsla(0, 0%, 60%, 1);
 }
 
 strong {
   color: hsla(160, 100%, 30%, 1);
 }
 
-.max-width-wrapper {
-  .card {
-    width: 40.5em;
-    padding-inline: 1em;
-    margin-inline-start: 10em;
-    border-bottom: solid 8px hsla(0, 0%, 60%, 1);
-    border-top: solid 3px transparent;
-    background-color: white;
-  }
-
-  @media (max-width: 48rem) {
-    .card {
-      width: 48em;
-      padding-inline: 0.5em;
-      margin: 0;
-    }
-  }
-
-  @media (max-width: 24.375rem) {
-    .card {
-      width: 24.375em;
-      padding-inline: 0.5em;
-      margin: 0;
-    }
-  }
-}
-
 main {
   background-color: hsla(0, 0%, 40%, 1);
-  padding-top: 3em;
-  padding-bottom: 2.8em;
+  padding: 12px 0;
 }
 
-h2.indented-heading {
-  width: 16.5em;
-  padding: 0.5em 1em;
+.card {
+  background-color: white;
+  padding: 12px;
+  border-bottom: solid 6px hsla(0, 0%, 60%, 1);
+}
+
+.indented-heading {
+  max-width: fit-content;
+  padding: 8px 16px;
   background-color: hsla(45, 100%, 50%, 1);
-  margin-left: -1em;
-  border-bottom: solid 8px hsla(45, 100%, 40%, 1);
-  margin-top: 8px;
+  border-bottom: solid 6px hsla(45, 100%, 40%, 1);
+  margin-left: -20px;
+  margin-top: -5px;
+}
 
-  @media (max-width: 48rem) {
-    .indented-heading {
-      margin-inline-start: 1em;
-    }
-  }
+p {
+  margin-bottom: 1rem;
+}
 
-  @media (max-width: 24.375rem) {
-    .indented-heading {
-      margin-inline-start: 1.2em;
-    }
-  }
+p:last-child {
+  margin-bottom: 0;
 }
